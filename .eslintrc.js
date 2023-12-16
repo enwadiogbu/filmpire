@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "@react-native-community",
+  ],
   overrides: [
     {
       env: {
@@ -23,6 +28,8 @@ module.exports = {
   // Only replace the rules part of the ESLint Configuration
 
   rules: {
+    // ...
+    "prettier/prettier": ["error", { singleQuote: true }],
     "react/react-in-jsx-scope": 0,
     "import/extensions": 0,
     "react/prop-types": 0,
