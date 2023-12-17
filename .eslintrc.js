@@ -3,12 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "airbnb",
-    "@react-native-community",
-  ],
+  extends: ["eslint:recommended", "plugin:react/recommended", "airbnb"],
   overrides: [
     {
       env: {
