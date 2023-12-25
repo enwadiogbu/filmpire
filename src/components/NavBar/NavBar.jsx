@@ -47,7 +47,6 @@ const NavBar = () => {
           </IconButton>
           {!isMobile && "Search..."}
           <div>
-            My Movies
             {!isAuthenticated ? (
               <Button color="inherit" onClick={() => {}}>
                 Login &nbsp; <AccountCircle />
@@ -60,6 +59,7 @@ const NavBar = () => {
                 className={classes.linkButton}
                 onClick={() => {}}
               >
+                {!isMobile && <>My Movies &nbsp;</>}
                 <Avatar
                   style={{ height: 30, width: 30 }}
                   alt="Profile"
